@@ -35,6 +35,6 @@ function gen() {
 function download(object) {
   var link = document.createElement("a");
   link.href = URL.createObjectURL(new Blob([JSON.stringify(object)]));
-  link.download = "caub.onc";
+  link.download = "blobby-caub.onc";
   link.click().remove();
 }
