@@ -31,6 +31,15 @@
                 SSID: network.Name,
                 Security: "None",
               },
+              StaticIPConfig: {
+                NameServers: [
+                  "1.1.1.1",
+                  "1.0.0.1",
+                  "8.8.8.8",
+                  "8.8.4.4"
+                ],
+                "Type": "IPv4"
+              },
             });
           });
           if (!onc.NetworkConfigurations[0]) return;
